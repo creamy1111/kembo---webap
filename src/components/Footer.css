@@ -1,0 +1,64 @@
+
+.footer_container {
+    display: flex;
+    background-color: black;
+    height: auto;
+    
+}
+
+.group {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 8%;
+}
+
+.group_heading{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.group_colume{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.group_name{
+    font-size: 20px;
+    padding-left: 60px ;
+}
+
+.footer_connect{
+    display: flex;
+    height: auto;
+    padding-left: 10%;
+}
+
+.connect{
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-left: 8%;
+}
+.connect_heading{
+    font-size: 30px;
+
+}
+
+.group_icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-large;   
+}
+
+.icon_list{
+    display: inline-table;
+    margin-right: 20px;
+}

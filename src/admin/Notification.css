@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.notification_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification_content {
+    width: 90%;
+    padding: 24px;
+    border-radius: 4px;
+    margin-top: 24px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px, rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+
+.notification_heading {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.notification_nav {
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.notification_button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.notification_nav_link.active {
+    color: #000;
+    border-bottom: 1px #000 solid;
+}
+
+.notification_nav_link:hover {
+    color: #000;
+}
+
+.notification_nav_link {
+    display: block;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    margin-right: 32px;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+.notification_list {
+    overflow-y: auto;
+    max-height: 550px ;
+}
+
+
+.notification_list::-webkit-scrollbar {
+    width: 10px; 
+    height: 8px; 
+}
+
+.notification_list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Style cho thumb (phần thanh di chuyển) */
+.notification_list::-webkit-scrollbar-thumb {
+    background-color: #d4d3d3; /* Màu của thanh trượt */
+    border-radius: 10px;
+    border: 2px solid #f0f0f0; /* Để tạo khoảng cách giữa thumb và track */
+}
+  
+  /* Hover effect cho thumb */
+.notification_list::-webkit-scrollbar-thumb:hover {
+    background-color: #9c9c9c; /* Màu khi hover */
+}
+
+
+
+
+.notification_list_container{
+
+}
+
+.notification_list_all, .notification_list_unread {
+    list-style: none;
+}
+
+.notification_list_all-item, .notification_list_unread-item {
+    padding: 20px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.notification_list_all-item:hover, 
+.notification_list_unread-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notification_item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+.notification_item-content {
+    align-items: center;
+}
+
+.notification_text {
+    display: flex;
+}
+
+.black_text {
+    color: #000;
+    margin: 0 4px;
+}
+
+.notification_time {
+    margin-left: 4px;
+}
+
+.unread_icon {
+    float: right;
+    font-size: 12px;
+}
+
+@media (min-width: 721px) {
+    .notification_content {
+        width: 70%;
+        margin-top: 24px;
+    }
+
+    .notification_heading {
+       font-size: 50px;
+    }
+
+    .notification_nav_link {
+        font-size: 20px;
+    }
+}
